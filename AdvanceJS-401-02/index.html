@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdvanceJS-401-02</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+        .parent {
+            width: 80px;
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            padding: 2px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" onclick="addchild()">1st child</div>
+    <script>
+        
+
+
+        let arr = ['1st','2nd', '3rd', '4th', '5th','6th','7th','8th','9th','10th','11th','12th', '13th', '14th','15th','16th','17th'];
+        let color = ['green','pink']
+        var c = 0
+        function addchild(){
+            
+            for(let i=1;i<arr.length;i++){
+                if(i%2==1 && i!==16 && i!==8){
+                    var ele = document.createElement('div')
+                    ele.innerText = `${arr[i]} child`
+                    ele.style.width = '80px'
+                    ele.style.backgroundColor= 'rgb(67, 245, 23)'
+                    ele.style.color= 'white';
+                    ele.style.border= '2px solid black';
+                    ele.style.borderRadius= '5px';
+                    ele.style.textAlign= 'center';
+                    ele.style.padding= '2px';
+                    ele.style.margin= '2px';
+                    document.getElementsByTagName('body')[0].appendChild(ele)
+                }
+                else if(i%8===0){
+                    console.log('hello')
+                    var ele = document.createElement('div')
+                    ele.innerText = `${arr[i]} child`
+                    ele.style.width = '80px'
+                    ele.style.backgroundColor= `${color[c++]}`
+                    ele.style.color= 'black';
+                    ele.style.border= '2px solid black';
+                    ele.style.borderRadius= '5px';
+                    ele.style.textAlign= 'center';
+                    ele.style.padding= '2px';
+                    ele.style.margin= '2px';
+                    document.getElementsByTagName('body')[0].appendChild(ele)
+                } 
+                else{
+                    var ele = document.createElement('div')
+                    ele.innerText = `${arr[i]} child`
+                    ele.style.width = '80px'
+                    ele.style.backgroundColor= 'white'
+                    ele.style.color= 'black';
+                    ele.style.border= '2px solid black';
+                    ele.style.borderRadius= '5px';
+                    ele.style.textAlign= 'center';
+                    ele.style.padding= '2px';
+                    ele.style.margin= '2px';
+                    document.getElementsByTagName('body')[0].appendChild(ele)
+                }
+                
+            }
+        }
+
+    </script>
+</body>
+</html>
