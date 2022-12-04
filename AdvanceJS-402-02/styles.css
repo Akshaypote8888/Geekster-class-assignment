@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+#heading{
+    color: green;
+}
+#add_text{
+    color: green;
+}
+
+#image{
+    width: 12%;
+    height: 12%;
+}
