@@ -1,3 +1,13 @@
+
+#input_text{
+    outline: none;
+}
+
+#input_text:focus{
+    border:  2px solid rgb(157, 207, 235);
+    border-radius: 3px;
+}
+
 .list {
     display: flex;
     margin: 10px 0px 10px 0px;
