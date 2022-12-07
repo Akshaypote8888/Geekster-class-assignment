@@ -1,0 +1,20 @@
+.list {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.Delete_button{
+    margin: 0px 30px 0px 30px;
+    font-size: 10px;
+}
+
+#add_item{
+    margin: 0px 10px 0px 10px;
+    /* border-radius: 5px; */
+    padding: 3px 20px 3px 20px;
+    /* border: 1px solid gray; */
+}
+
+
