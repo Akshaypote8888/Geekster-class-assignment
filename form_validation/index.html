@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="main_container">
+        <h1 id="heading">Validating Web Form</h1>
+        <br>
+        <div id="validation_form">
+            <div id="first_name_box">
+                <label id="first_name_label" for="name">First Name</label>
+                <input id="first_name" type="text">
+                <div id="First_name_error"></div>
+            </div>
+            <div id="last_name_box">
+                <label id="last_name_label" for="name">Last Name</label>
+                <input id="last_name" type="text">
+                <div id="last_name_error"></div>
+            </div>
+            <div id="email_box">
+                <label id="email_label" for="Email">Email</label>
+                <input id="email" type="text">
+                <div id="email_error"></div>
+            </div>
+            <div id="password_box">
+                <label id="password_label" for="Password">Password</label>
+                <input id="password" type="text">
+                <div id="password_error"></div>
+            </div>
+            <div id="telephone_box">
+                <label id="telephone_label" for="number">Telephone</label>
+                <input id="telephone" type="text">
+                <div id="telephone_error"></div>
+            </div>
+            <div id="bio_box">
+                <label id="bio_label" for="text">Your Bio</label>
+                <input id="bio" type="text">
+                <div id="bio_error"></div>
+            </div>
+            <br>
+            <br>
+            <button id="submit_button">Submit</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
