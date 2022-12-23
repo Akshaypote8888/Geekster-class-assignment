@@ -72,7 +72,7 @@
     font-size: 17px;
     color: rgb(91, 91, 91);
 }
-#delete_player,#add_5,#substract_5{
+#delete_player,.add_5,#substract_5{
     width: 40px;
     height: 40px;
     border: 0;
@@ -80,7 +80,7 @@
     border-radius: 20px;
     margin: 0px 5px 0px 5px;
 }
-#delete_player:hover,#add_5:hover,#substract_5:hover{
+#delete_player:hover,.add_5:hover,#substract_5:hover{
     width: 40px;
     height: 40px;
     border: 1px solid rgb(243, 116, 135);
