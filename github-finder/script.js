@@ -28,7 +28,7 @@ function renderUsers(userData) {
                     <img src="${profilePictureUrl}" class="profile_image" alt="profile" />
                     <div>
                         <h3 id="username">${username}</h3>
-                        <a href="${profileUrl}">visit profile</a>
+                        <a id = "visit_link" href="${profileUrl}">visit profile</a>
                     </div>
                 </div>`
     }
